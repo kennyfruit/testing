@@ -1,0 +1,63 @@
+import random
+while True:
+    play = input("清侵磨較叉燒包！ — 請輸入 p（包）、s（剪）或者 r（揼）\n")
+    complay = random.choice(["p","s","r"])
+    game = {'p': '包', 's': '剪', 'r': '揼'}
+    if play == "p" or play == "P":
+        while True:
+            confirm = input("確認出「包」？(y/n) ")
+            if confirm == "n" or confirm =="y":
+                break
+            else:
+                continue
+        if confirm =="y":
+            print("好，你出包")
+            break
+        if confirm =="n":
+            continue
+    if play == "s" or play == "S":
+        while True:
+            confirm = input("確認出「剪」？(y/n) ")
+            if confirm == "n" or confirm =="y":
+                break
+            else:
+                continue
+        if confirm =="y":
+            print("好，你出剪")
+            break
+        if confirm =="n":
+            continue
+    if play == "r" or play == "R":
+        while True:
+            confirm = input("確認出「揼」？(y/n) ")
+            if confirm == "n" or confirm =="y":
+                break
+            else:
+                continue
+        if confirm =="y":
+            print("好，你出揼")
+            break
+        if confirm =="n":
+            continue   
+    else:
+        print("得三個選擇，p／s／r，記得用細楷")
+        continue
+if play == 'p' and complay == 's':
+    print(f'電腦出{game[complay]}，連電腦都贏你呀')
+if play == 's' and complay == 'r':
+    print(f'電腦出{game[complay]}，連電腦都贏你呀')
+if play == 'r' and complay == 'p':
+    print(f'電腦出{game[complay]}，連電腦都贏你呀')
+if play == complay:
+    print(f'電腦出{game[complay]}，打和啦 super！')
+if play == 'p' and complay == 'r':
+    print(f'電腦出{game[complay]}，你贏咗，好叻叻呀')
+if play == 's' and complay == 'p':
+    print(f'電腦出{game[complay]}，你贏咗，好叻叻呀')
+if play == 'r' and complay == 's':
+    print(f'電腦出{game[complay]}，你贏咗，好叻叻呀')
+again = input("再玩？(y/n) ")
+if again == "y":
+    break
+if again == "n":
+    quit()
