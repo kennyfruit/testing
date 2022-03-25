@@ -14,7 +14,6 @@ b = date(2022, 3, 23)
 
 #create empty arrays for data we're collecting
 days=[]
-# days = ["01", "02" ,"03" ,"04" ,"05" ,"06" ,"07" ,"08" ,"09" ,"10"]
 url_list=[]
 final = []
 
